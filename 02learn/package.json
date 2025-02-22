@@ -1,0 +1,23 @@
+{
+  "name": "learn",
+  "version": "1.0.0",
+  "description": "noje js tutorial",
+  "keywords": [
+    "code",
+    "step",
+    "by",
+    "step"
+  ],
+  "license": "ISC",
+  "author": "saurabh",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "nodemon": "^3.1.9",
+    "simple-node-logger": "^21.8.12"
+  }
+}
