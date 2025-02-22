@@ -1,5 +1,5 @@
-import absFloor from '../utils/abs-floor';
-import absCeil from '../utils/abs-ceil';
+import absFloor from 'moment/src/lib/utils/abs-floor';
+import absCeil from 'moment/src/lib/utils/abs-ceil';
 
 export function bubble() {
     var milliseconds = this._milliseconds,
