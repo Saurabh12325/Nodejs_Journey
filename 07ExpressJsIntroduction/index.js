@@ -10,7 +10,7 @@ app.get("/", (req, res) => {
 app.get("/about", (req, res) => {
     res.send(`
         <h1>Welcome to the about page</h1>
-        <input type = 'text', placeholder = 'name user'value="${req.query.name}"  />
+        <input type = 'text', placeholder = 'name user'value="${req.query.name}" />
         <button>click me </button>
          <a href= "/">go to home page</a>
         
