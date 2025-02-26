@@ -16,5 +16,6 @@ route.get('/course',(req,res)=>{
 route.get('/contact',(req,res)=>{
     res.send("Welcome to the contact page")
 })
-app.use('/',route)
+app.use('/',route)  
 app.listen(4100)
+ 
