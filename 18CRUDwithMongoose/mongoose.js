@@ -7,7 +7,7 @@ const ProductSchema = new mongoose.Schema(
     price: Number,
 brands:String}
   );
-//   save schema in the databasr
+//   save schema in the database
 const SaveInDb = async () =>{
    const productsModel = mongoose.model('Products',ProductSchema)
    let data = new productsModel({name:'ashish',category:'mobile',price:100})
@@ -39,7 +39,7 @@ const deleteInDb = async () =>{
 
 }
 deleteInDb()
-
+  
 // read the data from the database
 const ReadInDb = async ()=>{
     const productsModel = mongoose.model('Products',ProductSchema)
