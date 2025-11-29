@@ -14,6 +14,7 @@
     <div id="chat"></div>
     <form id="message-form">
         <input
+        id="message-input"
         type="text"
         placeholder="Enter your messsage"
         />
@@ -26,6 +27,21 @@
         const usersList = document.getElementById('users')
         const messageform = document.getElementById('message-form')
         const messageInput = document.getElementById('message-input')
+        
+        const username = prompt('Enter your name')
+
+        socket.emit('join', username)
+        socket.on('userJoined', (user) => {
+               addMessage(`${user} has joined the chat` )
+        });
+        socket.on('userList',(users)=>{
+            usersList.innerHTML = users.map((user) => `<li>${user}</li>`).join("")
+        })
+        function addMessage(input){
+            const messageElement = document.createElement("div")
+            messageElement.textContent= input;
+            chat.appendChild(messageElement)
+        }
     </script>
 </body>
 </html>
