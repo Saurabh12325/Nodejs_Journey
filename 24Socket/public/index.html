@@ -19,5 +19,13 @@
         />
         <button type="submit">Send</button>
     </form>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io();
+        const chat = document.getElementById('chat')
+        const usersList = document.getElementById('users')
+        const messageform = document.getElementById('message-form')
+        const messageInput = document.getElementById('message-input')
+    </script>
 </body>
 </html>

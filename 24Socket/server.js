@@ -11,3 +11,15 @@
 
 
   app.use(express.static('public'))
+
+  const users = new Set();
+  io.on("connection",(Socket)=>{
+    console.log('A user is now connnected');
+
+    //handle users when they will join the chat 
+
+    //handle incoming chat message
+
+    //handle user disconnection
+
+  })
